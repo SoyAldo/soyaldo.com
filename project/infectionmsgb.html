@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="../css/normalize.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/project.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header-content">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="Logo" />
+                </div>
+                <nav class="navbar">
+                    <a href="/">Home</a>
+                    <a href="../proects.html">Projects</a>
+                    <a href="../contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="main">
+                <h1 class="title">InfectionMsgB</h1>
+
+                <p class="description">
+                    ¿Quieres darle un poco de privacidad a tus jugadores? Que
+                    tal un complemento que deje a todos los jugadores poder
+                    enviarse mensajes secretos entre ellos.
+                </p>
+
+                <h2 class="commandsAndPermissions">Comandos y Permisos</h2>
+                <table>
+                    <thead>
+                        <td>Comando</td>
+                        <td>Permiso</td>
+                        <td>Descripción</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/infectionmsgadmin help</td>
+                            <td>infection.msg.admin</td>
+                            <td>Muestra una pequeña descripción de los sub comandos.</td>
+                        </tr>
+                        <tr>
+                            <td>/infectionmsgadmin reload</td>
+                            <td>infection.msg.admin</td>
+                            <td>Actualiza los ajustes y mensajes.</td>
+                        </tr>
+                        <tr>
+                            <td>/infectionmsgadmin version</td>
+                            <td>infection.msg.admin</td>
+                            <td>Muestra información sobre la versión del complemento.</td>
+                        </tr>
+                        <tr>
+                            <td>/msg [player] [message]</td>
+                            <td>infection.msg</td>
+                            <td>Envía un mensaje privado a un jugador.</td>
+                        </tr>
+                        <tr>
+                            <td>/reply [message]</td>
+                            <td>infection.reply</td>
+                            <td>Responde a tu último mensaje privado.</td>
+                        </tr>
+                        <tr>
+                            <td>/ignore [player]</td>
+                            <td>infection.ignore</td>
+                            <td>Agrega a un jugador de tu lista de ignorados.</td>
+                        </tr>
+                        <tr>
+                            <td>/unignore [player]</td>
+                            <td>infection.unignore</td>
+                            <td>Elimina a un jugador de tu lista de ignorados.</td>
+                        </tr>
+                        <tr>
+                            <td>/msgspy</td>
+                            <td>infection.msgspy</td>
+                            <td>Activa/Desactiva el modo espía para los mensajes privados.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container content">
+                <p>Todos los derechos reservados &copy; soyaldo.com</p>
+            </div>
+        </footer>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
