@@ -1,10 +1,10 @@
 :root {
-    --primary: #2D93AD;
-    --secondary: #D33F49;
-    --tertiary: #A3320B;
-    --white: #D5BBB1;
-    --black: #393D3F;
-    --font: 'Roboto Mono', monospace;
+    --primary: #2d93ad;
+    --secondary: #d33f49;
+    --tertiary: #a3320b;
+    --white: #d5bbb1;
+    --black: #393d3f;
+    --font: "Roboto Mono", monospace;
 }
 
 html {
@@ -12,7 +12,9 @@ html {
     font-size: 62.5%;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
     box-sizing: inherit;
 }
 
@@ -22,16 +24,24 @@ body {
     font-family: var(--font);
 }
 
-h1, h2, h3, p, span, a {
+h1,
+h2,
+h3,
+p,
+span,
+a {
     color: var(--black);
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
     text-align: center;
     padding-bottom: 2rem;
+    text-decoration: underline;
 }
 
 h1 {
@@ -63,6 +73,15 @@ ul li {
 }
 
 table {
+    background-color: var(--black);
+    padding: 2rem;
+    color: var(--white);
+}
+
+table thead td{
+    border-left: 1px solid var(--white);
+    border-right: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
 }
 
 table thead td {
@@ -71,10 +90,14 @@ table thead td {
     font-weight: 700;
 }
 
+table tbody td{
+    border: 1px solid var(--white);
+}
+
 table tbody td {
     font-size: 1.6rem;
     text-align: left;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 /* Utility */
@@ -94,10 +117,19 @@ table tbody td {
 }
 
 .header-content {
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 4rem;
+}
+
+@media (min-width: 578px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .header-content .logo img{
@@ -107,8 +139,20 @@ table tbody td {
 }
 
 .header-content .navbar {
+    padding-top: 2rem;
     display: flex;
+    flex-direction: column;
     gap: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 578px) {
+    .header-content .navbar {
+        padding-top: 0;
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
 }
 
 /* Main */
@@ -118,17 +162,13 @@ table tbody td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .description {
-    padding-bottom: 2rem;
-}
-
-code {
-    width: 90%;
-    background-color: #eee;
-    border: 1px solid #999;
-    padding: 20px;
+    padding: 2rem;
+    text-justify: newspaper;
+    line-height: 1.5;
 }
 
 /* Footer*/

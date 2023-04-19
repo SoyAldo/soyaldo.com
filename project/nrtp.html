@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>InfectionMsgB</title>
+
+        <link rel="icon" href="../img/logo.png" />
+
+        <link rel="stylesheet" href="../css/normalize.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/project.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header-content">
+                <div class="logo">
+                    <a href="/"><img src="../img/logo.png" alt="Logo" /></a>
+                </div>
+                <nav class="navbar">
+                    <a href="/">Home</a>
+                    <a href="../projects.html">Projects</a>
+                    <a href="../contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="main">
+                <h1 class="title">nRtp</h1>
+
+                <p class="description">
+                    ¿Necesitas que tus jugadores viajen por el mundo de manera
+                    aleatoria? Pero tienes varios servidores para una sola
+                    modalidad, pues nRtp es la solución.
+                </p>
+
+                <h2 class="commandsAndPermissions">Comandos y Permisos</h2>
+                <table>
+                    <thead>
+                        <td>Comando</td>
+                        <td>Permiso</td>
+                        <td>Descripción</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/nrtpadmin help</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Muestra la lista de comandos disponibles.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin create [type]</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Crea un nuevo tipo de viaje aleatorio.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin delete [type]</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Elimina un tipo de viaje aleatorio.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin list</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Enlista los tipos de viajes aleatorios.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin info [type]</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Muestra la información de un tipo específico.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin edit [type] center</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Edita el centro.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin edit [type] minradius</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Edita el radio mínimo.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin edit [type] maxradius</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Edita el radio máximo.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin reload</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Actualiza la configuración y los mensajes.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtpadmin version</td>
+                            <td>nrtp.admin</td>
+                            <td>
+                                Muestra la versión actual del complemento.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtp [type]</td>
+                            <td>nrtp.rtp</td>
+                            <td>
+                                Viajar aleatoriamente.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>/nrtp [type] {player}</td>
+                            <td>nrtp.rtp.others</td>
+                            <td>
+                                Enviar aleatoriamente a un jugador.
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container content">
+                <p>Todos los derechos reservados &copy; soyaldo.com</p>
+            </div>
+        </footer>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
