@@ -4,7 +4,7 @@
     --tertiary: #a3320b;
     --white: #d5bbb1;
     --black: #393d3f;
-    --font: "Roboto Mono", monospace;
+    --font: 'Space Grotesk', sans-serif;
 }
 
 html {
