@@ -74,8 +74,9 @@ ul li {
 
 table {
     background-color: var(--black);
-    padding: 2rem;
     color: var(--white);
+    margin: 1rem;
+    padding: 1rem;
 }
 
 table thead td{
@@ -90,14 +91,17 @@ table thead td {
     font-weight: 700;
 }
 
-table tbody td{
-    border: 1px solid var(--white);
-}
-
 table tbody td {
+    border: 1px solid var(--white);
     font-size: 1.6rem;
     text-align: left;
     padding: 0.5rem 1rem;
+    word-wrap: break-word;
+}
+
+table tbody .spigot, table tbody .bungeecord {
+    text-align: center;
+    font-size: 2.2rem;
 }
 
 /* Utility */
