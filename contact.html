@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header class="header">
@@ -26,7 +27,21 @@
     </header>
 
     <main class="container">
-        <h1>Contacto</h1>
+        <h1 class="title">Contacto</h1>
+
+        <form class="form">
+            <div class="input">
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="input">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
 
     </main>
 
