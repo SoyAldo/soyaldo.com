@@ -111,7 +111,7 @@ table tbody td {
     align-items: center;
 }
 
-@media (min-width: 578px) {
+@media (min-width: 768px) {
     .header-content {
         flex-direction: row;
         justify-content: space-between;
@@ -140,6 +140,15 @@ table tbody td {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .header-content .navbar {
+        padding-top: 0;
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
+}
+
 .link {
     font-weight: 500;
     color: var(--secondary);
@@ -153,15 +162,6 @@ table tbody td {
 
 .link:hover {
     color: var(--white);
-}
-
-@media (min-width: 578px) {
-    .header-content .navbar {
-        padding-top: 0;
-        flex-direction: row;
-        text-align: left;
-        gap: 2rem;
-    }
 }
 
 /* Footer*/
