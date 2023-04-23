@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
+    --primaryDark: #022d81;
     --primary: #003FBA;
-    --primaryLight: #104bc0;
+    --primaryLight: #0946c0;
+    --primaryLight2: #0f4dc9;
     --secondary: #34A1E5;
     --secondaryLight: #5fb3e7;
     --tertiary: #A3320B;
+    --whiteDark: #b3c1dd;
     --white: #cddeff;
     --black: #393D3F;
     --font: 'Space Grotesk', sans-serif;
@@ -96,7 +99,8 @@ table tbody td {
 /* Header */
 .header {
     background-color: var(--primary);
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px -5px 10px rgb(0, 0, 0, .5) inset;
 }
 
 .header-content {
@@ -163,7 +167,7 @@ table tbody td {
 /* Footer*/
 .footer {
     background-color: var(--primary);
-    box-shadow: 2px -2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .5) inset;
 }
 
 .footer .content p {
